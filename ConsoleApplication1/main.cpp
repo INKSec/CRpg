@@ -1,8 +1,16 @@
 
 #include <iostream>
-
+#include "texts.h"
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    string name;
+
+    cout << "Bitte gib deinen Namen ein: \n";
+    cin >> name;
+
+    texts texts;
+    texts.Einleitung();
+    
 }
 
