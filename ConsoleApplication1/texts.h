@@ -10,6 +10,7 @@ private:
 public:
 	void Einleitung();
 	void Scene1(string);
+	void Scene2(string);
 };
 
 
