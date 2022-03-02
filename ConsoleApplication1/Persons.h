@@ -15,6 +15,7 @@ public:
 	int get_hp();
 	int get_ap();
 	int get_defence();
+	void get_status() const;
 
 	void heal();
 	void fight(Persons&);

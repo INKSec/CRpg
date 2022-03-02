@@ -1,5 +1,6 @@
 #include "texts.h"
 #include <iostream>
+#include "Persons.h"
 
 
 void texts::Einleitung() {
@@ -16,5 +17,18 @@ void texts::Scene1(string n) {
 }
 
 void texts::Scene2(string n) {
+	if (n == "Ja" || n == "JA" || n == "ja" || n == "jA") {
+		cout << "Nickend drehst du dich um und oeffnest die schwere Eisentuer...\n";
+		cout << "";
+	} else {
+		cout << "Du verneins und wirst umgehend von einem Stein erschlagen\n";
+		cout << "Game Over\n";
+		exit;
+	}
+}
 
+void texts::GiveNumber(int& a, int& b, int& c) {
+	a = 2;
+	b = 3;
+	c = 4;
 }

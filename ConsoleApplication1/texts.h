@@ -11,6 +11,8 @@ public:
 	void Einleitung();
 	void Scene1(string);
 	void Scene2(string);
+
+	void GiveNumber(int&, int&, int&);
 };
 
 

@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 
+
 Persons::Persons(std::string n, int h, int a, int d) : name(n), healhtpoints(h), attackpoints(a), defence(d) {
 	
 };
@@ -19,6 +20,10 @@ int Persons::get_ap() {
 
 int Persons::get_defence() {
 	return defence;
+}
+
+void Persons::get_status() const {
+	std::cout << name << ", HP: " << healhtpoints << ", AP: " << attackpoints << ", DF " << defence;
 }
 
 void Persons::heal() {};
