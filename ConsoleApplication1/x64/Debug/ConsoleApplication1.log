@@ -1,7 +1,5 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: Das Zwischenverzeichnis (x64\Debug\) enthält freigegebene Dateien aus einem anderen Projekt (ConsoleApplication1.vcxproj). Dies kann zu einem falschen Bereinigungs- und Neuerstellungsverhalten führen.
   main.cpp
   texts.cpp
-C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\texts.h(11,18): error C2061: Syntaxfehler: Bezeichner "string"
-C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\texts.cpp(5,34): error C2511: "void texts::Einleitung(std::string)": Überladene Memberfunktion nicht in "texts" gefunden
-C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\texts.h(6): message : Siehe Deklaration von "texts"
   Code wird generiert...
+  ConsoleApplication1.vcxproj -> C:\Users\Micha\Desktop\CRpg\CRpg\x64\Debug\CRpg.exe
