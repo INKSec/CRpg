@@ -16,6 +16,8 @@ public:
 	void Scene3MathRiddle();
 	void Scene3Solved(string);
 	void GiveNumberScene3(int*, int*, int*);
+	void Scene4();
+	void Scene4MathRiddle();
 };
 
 

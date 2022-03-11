@@ -53,3 +53,12 @@ void texts::GiveNumberScene3(int* d, int* e, int* f) {
 	*e = 9;
 	*f = 3;
 }
+
+void texts::Scene4() {
+	cout << "Vor dir oeffnet sich eine Tuer und du betrittst den naechsten Raum.\n";
+	cout << "Mitten im Raum sitzt ein Eichhoernchen und sagt:\n";
+};
+
+void texts::Scene4MathRiddle() {
+	cout << "Wenn ich meine Zahl um 12 vergroesser erhalte ich 22. Wie heisst meine Zahl geteilt durch 2?\n";
+};
