@@ -23,7 +23,7 @@ int Persons::get_defence() {
 }
 
 void Persons::get_status() const {
-	std::cout << name << ", HP: " << healhtpoints << ", AP: " << attackpoints << ", DF " << defence;
+	std::cout << name << ", HP: " << healhtpoints << ", AP: " << attackpoints << ", DF: " << defence << std::endl;
 }
 
 void Persons::heal() {};
