@@ -3,7 +3,4 @@
 C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\main.cpp(20,33): warning C4101: "i": Unreferenzierte lokale Variable
 C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\main.cpp(20,30): warning C4101: "h": Unreferenzierte lokale Variable
 C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\main.cpp(20,27): warning C4101: "g": Unreferenzierte lokale Variable
-  texts.cpp
-C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\texts.cpp(26,3): warning C4551: Dem Funktionsaufruf fehlt die Argumentliste
-  Code wird generiert...
   ConsoleApplication1.vcxproj -> C:\Users\Micha\Desktop\CRpg\CRpg\x64\Debug\CRpg.exe
