@@ -28,7 +28,7 @@ int main()
     // Scene 1
     texts.Einleitung();
     cin >> name;
-    Persons hero(name, 10, 10, 10);
+    Persons hero(name, 10, 2, 0);
     hero.get_status();
     texts.Scene1(hero.get_name());
     cin >> decision;
@@ -58,13 +58,12 @@ int main()
     };
     texts.Scene3Solved(hero.get_name());
     texts.GiveNumberScene3(&d, &e, &f);
+    std::this_thread::sleep_for(std::chrono::seconds(3));
     ClearScreen();
     mathriddle = 0;
 
        //Scene4
     texts.Scene4();
-    
-    
     while (mathriddle == 0) {
         int answer;
         texts.Scene4MathRiddle();
@@ -78,7 +77,16 @@ int main()
         }
 
     }
+    ClearScreen();
+    texts.Scene4Solved(hero.get_name());
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+    ClearScreen();
     
+
+    //Scene5
+    
+    Persons boss("DungeonLord", 10, 1, 0);
+    hero.fight(boss);
 
 }
 
