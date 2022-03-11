@@ -2,6 +2,9 @@
 #include "texts.h"
 #include "Persons.h"
 #include <vector>
+#include <thread>
+#include < chrono>
+
 using namespace std;
 void ClearScreen();
 
@@ -21,9 +24,6 @@ int main()
     // TextObjekt is used for every Text
     texts texts;
 
-    
-    
-    
 
     // Scene 1
     texts.Einleitung();
@@ -37,6 +37,7 @@ int main()
     //Scene 2
     texts.Scene2(decision);
     texts.GiveNumberScene2(a, b, c);
+    std::this_thread::sleep_for(std::chrono::seconds(5));
     ClearScreen();
     
     //Scene 3
@@ -57,7 +58,28 @@ int main()
     };
     texts.Scene3Solved(hero.get_name());
     texts.GiveNumberScene3(&d, &e, &f);
-    cout << d;
+    ClearScreen();
+    mathriddle = 0;
+
+       //Scene4
+    texts.Scene4();
+    
+    
+    while (mathriddle == 0) {
+        int answer;
+        texts.Scene4MathRiddle();
+        cout << "Antwort: ";
+        cin >> answer;
+        if (answer == 5) {
+            mathriddle = answer;
+        }
+        else {
+            cout << "Versuch es noch einmal.\n";
+        }
+
+    }
+    
+
 }
 
 void ClearScreen()
