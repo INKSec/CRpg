@@ -63,10 +63,23 @@ void texts::Scene4MathRiddle() {
 	cout << "Wenn ich meine Zahl um 12 vergroesser erhalte ich 22. Wie heisst meine Zahl geteilt durch 2?\n";
 };
 
-void texts:: Scene4Solved(string n) {
+void texts::Scene4Solved(string n) {
 	cout << n << ", du bist ja ein richtiges Mathegenie!\n"
 				 "Allerdings erhaelst du keine Zahlen.\n"
 				 "Du wunderst dich, als ploetzlich eine Bossmelodie ertoent und \n" 
 				 "ein riesiger Ritter vor dir steht...\n";
 
+};
+
+void texts::Bossfinished(int& a, int& b, int& c, string n) {
+	cout << "Mit seinen letzten Worten spricht " << n << " :\n"
+		"'Du bist wuerdig die letzten Zahlen zu erhalten. 4, 6, 7'\n"
+		"Du wendest dich ab und erblickst ein Zahlenpad.\n"
+		"Da du dir die Zahlen notierst hast, gibst du sie ein und...\n"
+		"Error!!! ERROR!! ERROR!!!!111\n"
+		"Bitte die richtige Reihenfolge verwenden!\n"
+		"Da du leider nicht weisst, wie man Zahlen aufsteigend sortiert, fragst du den sterbenden " << n  << ".\n";
+	a = 4;
+	b = 6;
+	c = 7;
 };

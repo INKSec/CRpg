@@ -19,6 +19,7 @@ public:
 	void Scene4();
 	void Scene4MathRiddle();
 	void Scene4Solved(string);
+	void Bossfinished(int&, int&, int&, string);
 };
 
 

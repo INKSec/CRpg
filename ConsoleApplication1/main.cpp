@@ -16,9 +16,9 @@ int main()
     int mathriddle = 0;
 
     vector<int> numbers;
-    // Array?
+    // Array? Array! next time
     int a, b, c, d, e, f, g, h, i;
-    // Training purpose
+    // for training purpose
     int* dpointer = &d, *epointer = &e, *fpointer = &f;
 
     // TextObjekt is used for every Text
@@ -37,6 +37,9 @@ int main()
     //Scene 2
     texts.Scene2(decision);
     texts.GiveNumberScene2(a, b, c);
+    numbers.push_back(a);
+    numbers.push_back(b);
+    numbers.push_back(c);
     std::this_thread::sleep_for(std::chrono::seconds(5));
     ClearScreen();
     
@@ -58,6 +61,9 @@ int main()
     };
     texts.Scene3Solved(hero.get_name());
     texts.GiveNumberScene3(&d, &e, &f);
+    numbers.push_back(d);
+    numbers.push_back(e);
+    numbers.push_back(f);
     std::this_thread::sleep_for(std::chrono::seconds(3));
     ClearScreen();
     mathriddle = 0;
@@ -84,9 +90,14 @@ int main()
     
 
     //Scene5
-    
-    Persons boss("DungeonLord", 10, 1, 0);
+    Persons boss("DungeonLord Harald", 10, 1, 0);
     hero.fight(boss);
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+    ClearScreen();
+    texts.Bossfinished(g, h, i, boss.get_name());
+    numbers.push_back(g);
+    numbers.push_back(h);
+    numbers.push_back(i);
 
 }
 
