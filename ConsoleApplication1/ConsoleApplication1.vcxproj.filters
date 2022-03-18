@@ -24,12 +24,21 @@
     <ClCompile Include="Persons.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmStatic.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="texts.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Persons.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

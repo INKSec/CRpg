@@ -1,3 +1,12 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: Das Zwischenverzeichnis (x64\Debug\) enthält freigegebene Dateien aus einem anderen Projekt (ConsoleApplication1.vcxproj). Dies kann zu einem falschen Bereinigungs- und Neuerstellungsverhalten führen.
+  Algorithms.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\Algorithms.cpp(13,21): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
   main.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\AlgorithmStatic.cpp(16,1): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
+C:\Users\Micha\Desktop\CRpg\CRpg\ConsoleApplication1\AlgorithmStatic.cpp(17,17): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  Code wird generiert...
   ConsoleApplication1.vcxproj -> C:\Users\Micha\Desktop\CRpg\CRpg\x64\Debug\CRpg.exe

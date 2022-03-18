@@ -1,6 +1,8 @@
 #include <iostream>
 #include "texts.h"
 #include "Persons.h"
+#include "Algorithms.h"
+#include "AlgorithmStatic.cpp"
 #include <vector>
 #include <thread>
 #include < chrono>
@@ -11,6 +13,8 @@ void ClearScreen();
 
 int main()
 {
+    
+    
     string name;
     string decision; // Temp
     int mathriddle = 0;
@@ -23,6 +27,7 @@ int main()
 
     // TextObjekt is used for every Text
     texts texts;
+    Algorithm alg;
 
 
     // Scene 1
@@ -91,14 +96,23 @@ int main()
 
     //Scene5
     Persons boss("DungeonLord Harald", 10, 1, 0);
-    hero.fight(boss);
-    std::this_thread::sleep_for(std::chrono::seconds(2));
+    //hero.fight(boss);
+    //std::this_thread::sleep_for(std::chrono::seconds(2));
     ClearScreen();
     texts.Bossfinished(g, h, i, boss.get_name());
     numbers.push_back(g);
     numbers.push_back(h);
     numbers.push_back(i);
+    
 
+    alg.bubblesort(numbers);
+    
+    for (auto& it : numbers) {
+        cout << it << endl;
+    }
+   
+    
+    
 }
 
 void ClearScreen()
